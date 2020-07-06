@@ -1,4 +1,4 @@
-import { TnFormErrorService } from 'tn-form-error';
+import { TnFormErrorService } from '@ahmedtamseer/tn-form-error';
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, FormControl, Validators, FormArray } from '@angular/forms';
 

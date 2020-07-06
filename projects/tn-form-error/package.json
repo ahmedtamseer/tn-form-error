@@ -1,10 +1,15 @@
 {
   "name": "tn-form-error",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Angular package for validating both reactive and template driven forms",
+  "scripts": {
+    "build": "..\\..\\node_modules\\.bin\\tsc -p tsconfig.schematics.json",
+    "copy:collection": "cp schematics\\collection.json ..\\..\\dist\\tn-form-error\\schematics\\collection.json",
+    "postbuild": "npm run copy:collection"
+  },
   "peerDependencies": {
-    "@angular/common": "^10.0.2",
-    "@angular/core": "^10.0.2"
+    "@angular/common": "^10.0.0",
+    "@angular/core": "^10.0.0"
   },
   "keywords": [
     "angular",
@@ -22,6 +27,7 @@
   "dependencies": {
     "tslib": "^2.0.0"
   },
+  "schematics": "./schematics/collection.json",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ahmedtamseer/tn-form-error.git"
