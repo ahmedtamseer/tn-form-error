@@ -1,16 +1,21 @@
 {
-  "name": "tn-form-error",
-  "version": "0.0.0",
+  "name": "tn-form-error-lib",
+  "version": "1.0.0",
+  "author": "Ahamed Thamseer",
+  "description": "Angular package for validating both reactive and template driven forms",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve tn-form-error-example",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "lib:build": "ng build tn-form-error",
+    "lib:pack": "cd dist/tn-form-error && npm pack"
   },
   "private": true,
   "dependencies": {
+    "@ahmedtamseer/tn-form-error": "^1.0.0",
     "@angular/animations": "~10.0.0",
     "@angular/common": "~10.0.0",
     "@angular/compiler": "~10.0.0",
@@ -20,10 +25,13 @@
     "@angular/platform-browser-dynamic": "~10.0.0",
     "@angular/router": "~10.0.0",
     "rxjs": "~6.5.5",
+    "tn-form-error": "file:dist/tn-form-error/tn-form-error-1.0.0.tgz",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.3"
   },
   "devDependencies": {
+    "@angular-devkit/build-angular": "~0.1000.1",
+    "@angular-devkit/build-ng-packagr": "~0.1000.1",
     "@angular/cli": "~10.0.0",
     "@angular/compiler-cli": "~10.0.0",
     "@types/node": "^12.11.1",
@@ -37,9 +45,31 @@
     "karma-coverage-istanbul-reporter": "~3.0.2",
     "karma-jasmine": "~3.3.0",
     "karma-jasmine-html-reporter": "^1.5.0",
+    "ng-packagr": "^10.0.0",
     "protractor": "~7.0.0",
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
     "typescript": "~3.9.5"
-  }
+  },
+  "peerDependencies": {
+    "@angular/common": "^10.0.2",
+    "@angular/core": "^10.0.2"
+  },
+  "keywords": [
+    "angular",
+    "form-validation",
+    "validation",
+    "reactive form",
+    "template driven form",
+    "rxjs"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ahmedtamseer/angular-tn-form-error/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahmedtamseer/angular-tn-form-error.git"
+  },
+  "homepage": "https://github.com/ahmedtamseer/angular-tn-form-error.git#readme"
 }

@@ -1,0 +1,27 @@
+
+
+
+div label,
+div input {
+  max-width: 100%;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  box-sizing: border-box;
+}
+
+div label {
+  font-weight: bold;
+}
+
+input.ng-invalid.ng-touched {
+  border: 1px solid red;
+}
+
+.text-right {
+  text-align: right;
+}
+
+i {
+  color: red;
+}

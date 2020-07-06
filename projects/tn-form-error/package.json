@@ -1,0 +1,30 @@
+{
+  "name": "tn-form-error",
+  "version": "1.0.0",
+  "description": "Angular package for validating both reactive and template driven forms",
+  "peerDependencies": {
+    "@angular/common": "^10.0.2",
+    "@angular/core": "^10.0.2"
+  },
+  "keywords": [
+    "angular",
+    "form-validation",
+    "validation",
+    "reactive form",
+    "template driven form",
+    "rxjs"
+  ],
+  "author": "Ahamed Thamseer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ahmedtamseer/angular-tn-form-error/issues"
+  },
+  "dependencies": {
+    "tslib": "^2.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahmedtamseer/angular-tn-form-error.git"
+  },
+  "homepage": "https://github.com/ahmedtamseer/angular-tn-form-error.git#readme"
+}

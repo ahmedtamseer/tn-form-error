@@ -1,0 +1,95 @@
+<form [formGroup]="demoForm">
+  <div>
+    <label for="name">Name</label>
+    <input type="text" formControlName="name" name="name" placeholder="Name validator by passing custom class">
+    <tn-form-error [control]="demoForm.controls.name" [field]="'Name'" [class]="'text-danger'"></tn-form-error>
+  </div>
+  <div>
+    <label for="email">Email</label>
+    <input type="email" formControlName="email" name="email" placeholder="Email Validator with out passing field value">
+    <tn-form-error [control]="demoForm.controls.email"></tn-form-error>
+  </div>
+  <div>
+    <label for="password">Password</label>
+    <input type="password" formControlName="password" name="password" placeholder="Password Validator">
+    <tn-form-error [control]="demoForm.controls.password" [field]="'Password'"></tn-form-error>
+  </div>
+  <div>
+    <label for="us_mobile_custom">US Mobile with custom message</label>
+    <input type="text" formControlName="us_mobile_custom" name="us_mobile_custom" placeholder="US Mobile Validator">
+    <tn-form-error [control]="demoForm.controls.us_mobile_custom" [msg]="'This is custom message'"></tn-form-error>
+  </div>
+  <div>
+    <label for="us_mobile">US Mobile</label>
+    <input type="text" formControlName="us_mobile" name="us_mobile" placeholder="US Mobile Validator">
+    <tn-form-error [control]="demoForm.controls.us_mobile" [field]="'India Mobile'"></tn-form-error>
+  </div>
+  <div>
+    <label for="in_mobile">India Mobile</label>
+    <input type="text" formControlName="in_mobile" name="in_mobile" placeholder="India Mobile Validator">
+    <tn-form-error [control]="demoForm.controls.in_mobile" [field]="'India Mobile'"></tn-form-error>
+  </div>
+  <div>
+    <label for="number">Number</label>
+    <input type="text" formControlName="number" name="number" placeholder="Number Validator">
+    <tn-form-error [control]="demoForm.controls.number" [field]="'Number'"></tn-form-error>
+  </div>
+  <div>
+    <label for="year">Year</label>
+    <input type="text" formControlName="year" name="year" placeholder="Year Validator">
+    <tn-form-error [control]="demoForm.controls.year" [field]="'Year'"></tn-form-error>
+  </div>
+  <div>
+    <label for="fulldate">Full Date</label>
+    <input type="text" formControlName="fulldate" name="fulldate" placeholder="Full Date Validator">
+    <tn-form-error [control]="demoForm.controls.fulldate" [field]="'Full Date'"></tn-form-error>
+  </div>
+  <div>
+    <label for="min">Min</label>
+    <input type="text" formControlName="min" name="min" placeholder="Min Validator">
+    <tn-form-error [control]="demoForm.controls.min" [field]="'Min'"></tn-form-error>
+  </div>
+  <div>
+    <label for="max">Max</label>
+    <input type="text" formControlName="max" name="max" placeholder="Max Validator">
+    <tn-form-error [control]="demoForm.controls.max"></tn-form-error>
+  </div>
+  <div>
+    <label for="required">Required</label>
+    <input type="text" formControlName="required" name="required" placeholder="Required Validator">
+    <tn-form-error [control]="demoForm.controls.required"></tn-form-error>
+  </div>
+  <div>
+    <label for="pattern">Pattern</label>
+    <input type="text" formControlName="pattern" name="pattern" placeholder="Pattern Validator">
+    <tn-form-error [control]="demoForm.controls.pattern"></tn-form-error>
+  </div>
+  <div>
+    <label for="optional">Optional</label>
+    <input type="text" formControlName="optional" name="optional" placeholder="optional field">
+  </div>
+
+  <div>
+    <label>Form Array</label>
+    <div formArrayName="array_field">
+      <div *ngFor="let array of demoForm.get('array_field')?.controls; let i = index" [formGroupName]="i">
+        <input formControlName="name" placeholder="Enter Name">
+        <tn-form-error [control]="demoForm.get('array_field')?.controls[i]?.get('name')" [field]="'Name'"></tn-form-error>
+        <input formControlName="optional" placeholder="Optional">
+        <tn-form-error [control]="demoForm.get('array_field')?.controls[i]?.get('optional')"></tn-form-error>
+        <div class="text-right">
+        <i (click)="RemoveArrayControl(i)" >Remove {{i + 1}} element from form array</i>
+      </div>
+      </div>
+    </div>
+  </div>
+  
+	<button (click)="AddArrayControl()">Add</button>
+</form>
+<br>
+<hr>
+<div>
+  <label>Ng Modal Example</label>
+  <input type="text" [(ngModel)]="ngModalExample" required minlength="4" placeholder="Ng model example" #name="ngModel">
+  <tn-form-error [control]="name"></tn-form-error>
+</div>

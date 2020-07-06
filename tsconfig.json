@@ -6,5 +6,21 @@
 */
 {
   "files": [],
-  "references": []
+  "references": [
+    {
+      "path": "./projects/tn-form-error/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/tn-form-error/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/tn-form-error-example/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/tn-form-error-example/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/tn-form-error-example/e2e/tsconfig.json"
+    }
+]
 }
