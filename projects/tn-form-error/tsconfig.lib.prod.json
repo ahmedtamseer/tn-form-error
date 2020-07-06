@@ -2,21 +2,6 @@
 {
   "extends": "./tsconfig.lib.json",
   "angularCompilerOptions": {
-    "enableIvy": false,
-    "skipTemplateCodegen": true,
-    "strictMetadataEmit": true,
-    "enableResourceInlining": true
-  },
-  "compilerOptions": {
-    "target": "es2015",
-    "lib": [
-      "dom",
-      "es2018"
-    ],
-    "paths": {
-      "@angular/*": [
-        "./node_modules/@angular/*"
-      ]
-    }
+    "enableIvy": false
   }
 }

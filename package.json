@@ -10,7 +10,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "lib:build": "ng build tn-form-error",
+    "lib:build": "ng build tn-form-error --prod",
     "lib:pack": "cd dist/tn-form-error && npm pack"
   },
   "private": true,

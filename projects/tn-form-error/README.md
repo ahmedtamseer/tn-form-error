@@ -1,8 +1,8 @@
 # TnFormError
-The official [Angular](https://angular.io/) library for [Form Validation](https://angular.io/guide/form-validation/).
+The official [Angular 10](https://angular.io/) library for [Form Validation](https://angular.io/guide/form-validation/).
 
 ```bash
-ng add @angular/tn-form-error
+ng add @ahmedtamseer/tn-form-error
 ```
 
 ## What is TnFormError?
@@ -24,7 +24,7 @@ The Angular CLI's `new` command will set up the latest Angular build in a new pr
 ### 2. Install Angular Form Error
 
 ```bash
-ng add @angular/tn-form-error
+ng add @ahmedtamseer/tn-form-error
 ```
 
 Now that you have a new project setup, install Angular Form Error from npm.
@@ -38,7 +38,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
-import { TnFormErrorModule } from 'tn-form-error';
+import { TnFormErrorModule } from '@ahmedtamseer/tn-form-error';
 
 @NgModule({
   declarations: [
@@ -92,7 +92,7 @@ export class MyApp {
 import { Component } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 
-import { TnFormErrorService } from 'tn-form-error';
+import { TnFormErrorService } from '@ahmedtamseer/tn-form-error';
 
 @Component({
   selector: 'app-root',
@@ -128,7 +128,7 @@ ng serve
 
 ## Resources
 
-[Stackblitz Template](https://stackblitz.com/edit/angular-tn-form-error) - A demo app which shows how to use Reactive and Template Driven form.
+[Stackblitz Template](https://stackblitz.com/edit/tn-form-error) - A demo app which shows how to use Reactive and Template Driven form.
 
 ## Developer Guide
 

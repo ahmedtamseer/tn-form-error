@@ -1,6 +1,6 @@
 import { AbstractControlDirective, AbstractControl } from '@angular/forms';
 import { Component, Input } from '@angular/core';
-
+// @dynamic
 @Component({
   selector: 'tn-form-error',
   template: `<ul class="r-ul" *ngIf="shouldShowErrors()">

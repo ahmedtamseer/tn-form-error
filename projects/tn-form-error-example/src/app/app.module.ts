@@ -1,4 +1,4 @@
-import { TnFormErrorModule } from '@ahmedtamseer/tn-form-error';
+import { TnFormErrorModule } from 'tn-form-error';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
